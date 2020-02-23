@@ -20,22 +20,19 @@
 <link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>About</title>
-<meta property="og:title" content="About" />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-" />
+<title>Extras</title>
+<meta property="og:title" content="Extras" />
+<meta property="og:description" content="Extras, including quizzes." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://vsoch.github.io" />
 <meta property="og:site_name" content="https://vsoch.github.io" />
 
-<meta itemprop="name" content="About">
-<meta itemprop="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+<meta itemprop="name" content="Extras">
+<meta itemprop="description" content="Extras, including quizzes.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-"/>
+<meta name="twitter:title" content="Extras"/>
+<meta name="twitter:description" content="Extras, including quizzes."/>
 
 <link rel="stylesheet" href="/docsy-jekyll/assets/css/main.css">
 <link rel="stylesheet" href="/docsy-jekyll/assets/css/palette.css">
@@ -145,8 +142,8 @@ $(document).ready(function() {
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
               <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  <a href="https://github.com/vsoch/docsy-jekyll/edit/master/pages/about.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/vsoch/docsy-jekyll/issues/new?labels=question&title=Question:&body=Question on: https://github.com/vsoch/docsy-jekyll/tree/master/pages/about.md" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+                  <a href="https://github.com/vsoch/docsy-jekyll/edit/master/_docs/extras/index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/vsoch/docsy-jekyll/issues/new?labels=question&title=Question:&body=Question on: https://github.com/vsoch/docsy-jekyll/tree/master/_docs/extras/index.md" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 <a href="https://github.com/vsoch/docsy-jekyll/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -163,21 +160,23 @@ $(document).ready(function() {
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	      <ol class="breadcrumb spb-1">
                 <li class="breadcrumb-item active" aria-current="page">
-	          <a href="/about/">About</a>
+	          <a href="/docs/extras/index">Extras</a>
                 </li>
 	      </ol>
            </nav>
            <div class="td-content">
-	      <h1 id="about">About</h1>
+	      <h1 id="extras">Extras</h1>
 
-<p>This is a <a href="https://vsoch.github.com/docsy-jekyll/">starter template</a> for a Docsy jekyll theme, based
-on the Beautiful <a href="https://github.com/google/docsy">Docsy</a> that renders with Hugo. This version is intended for
-native deployment on GitHub pages. See the <a href="https://github.com/vsoch/docsy-jekyll">respository</a> for more details.</p>
+<p>Extras include other integrations that aren’t relevant to style or customization,
+but can further enhance your documentation pages. Currently, we have support
+for adding interactive quizzes.</p>
 
-<h2 id="support">Support</h2>
+<ul>
+  <li><a href="example-quiz">Quizzes</a></li>
+</ul>
 
-<p>If you need help, please don’t hesitate to <a href="https://www.github.com/docsy-jekyll/vsoch">open an issue</a>.</p>
-
+<p>Would you like to see another question type, or another kind of extra? Please
+[open an issue])(https://github.com/vsoch/docsy-jekyll/issues/new).</p>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -228,7 +227,8 @@ $.each(headers, function(i, header){
 })
 </script>
 
-
+<script>
+$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://vsoch.github.io/docsy-jekyll/tags#survey ">survey</a></span></div>')</script>
 
 	
               
