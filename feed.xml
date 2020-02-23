@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docsy Jekyll</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Fransgenre Wiki</title>
+    <description>Site Wiki du discord Fransgenre.
 </description>
     <link>https://fransgenre.github.io/</link>
     <atom:link href="https://fransgenre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Feb 2020 13:57:49 +0000</pubDate>
-    <lastBuildDate>Sun, 23 Feb 2020 13:57:49 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Feb 2020 14:38:58 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Feb 2020 14:38:58 +0000</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
