@@ -4,10 +4,10 @@
     <title>Docsy Jekyll</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>https://vsoch.github.io/docsy-jekyll/</link>
-    <atom:link href="https://vsoch.github.io/docsy-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Feb 2020 10:45:48 +0000</pubDate>
-    <lastBuildDate>Sun, 23 Feb 2020 10:45:48 +0000</lastBuildDate>
+    <link>https://fransgenre.github.io/</link>
+    <atom:link href="https://fransgenre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 23 Feb 2020 13:57:49 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Feb 2020 13:57:49 +0000</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Jun 2019 18:52:21 +0000</pubDate>
-        <link>https://vsoch.github.io/docsy-jekyll/2019/hello-world/</link>
-        <guid isPermaLink="true">https://vsoch.github.io/docsy-jekyll/2019/hello-world/</guid>
+        <link>https://fransgenre.github.io/2019/hello-world/</link>
+        <guid isPermaLink="true">https://fransgenre.github.io/2019/hello-world/</guid>
         
         
         <category>jekyll</category>
@@ -45,8 +45,8 @@
 
 </description>
         <pubDate>Fri, 28 Jun 2019 10:52:21 +0000</pubDate>
-        <link>https://vsoch.github.io/docsy-jekyll/2019/welcome/</link>
-        <guid isPermaLink="true">https://vsoch.github.io/docsy-jekyll/2019/welcome/</guid>
+        <link>https://fransgenre.github.io/2019/welcome/</link>
+        <guid isPermaLink="true">https://fransgenre.github.io/2019/welcome/</guid>
         
         
         <category>jekyll</category>

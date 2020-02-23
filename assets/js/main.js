@@ -45,7 +45,7 @@
                         return
                     }
                     var query = $(this).val();
-                    var searchPage = "https://vsoch.github.io/docsy-jekyll/search/?q=" + query;
+                    var searchPage = "https://fransgenre.github.io/search/?q=" + query;
                     document.location = searchPage;
                     return false;
                 });
