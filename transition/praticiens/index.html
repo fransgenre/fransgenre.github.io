@@ -20,19 +20,22 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>Quiz</title>
-<meta property="og:title" content="Quiz" />
-<meta property="og:description" content="How to add interactive quizzes to your site." />
+<title>Fransgenre WIKI</title>
+<meta property="og:title" content="Fransgenre WIKI" />
+<meta property="og:description" content="Site Wiki du discord Fransgenre.
+" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://fransgenre.github.io" />
 <meta property="og:site_name" content="https://fransgenre.github.io" />
 
-<meta itemprop="name" content="Quiz">
-<meta itemprop="description" content="How to add interactive quizzes to your site.">
+<meta itemprop="name" content="Fransgenre WIKI">
+<meta itemprop="description" content="Site Wiki du discord Fransgenre.
+">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quiz"/>
-<meta name="twitter:description" content="How to add interactive quizzes to your site."/>
+<meta name="twitter:title" content="Fransgenre WIKI"/>
+<meta name="twitter:description" content="Site Wiki du discord Fransgenre.
+"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -149,8 +152,8 @@ $(document).ready(function() {
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
               <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  <a href="https://github.com/fransgenre/fransgenre.github.io/edit/release/_docs/extras/example-quiz.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Modifier cette page</a>
-<a href="https://github.com/fransgenre/fransgenre.github.io/issues/new?labels=question&title=Question:&body=Question on: https://github.com/fransgenre/fransgenre.github.io/tree/master/_docs/extras/example-quiz.md" target="_blank"><i class="fab fa-github fa-fw"></i> Signaler une erreur</a>
+                  <a href="https://github.com/fransgenre/fransgenre.github.io/edit/release/_praticiens/index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Modifier cette page</a>
+<a href="https://github.com/fransgenre/fransgenre.github.io/issues/new?labels=question&title=Question:&body=Question on: https://github.com/fransgenre/fransgenre.github.io/tree/master/_praticiens/index.md" target="_blank"><i class="fab fa-github fa-fw"></i> Signaler une erreur</a>
 <a href="https://github.com/fransgenre/fransgenre.github.io/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Proposer une suggestion</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -167,64 +170,18 @@ $(document).ready(function() {
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	      <ol class="breadcrumb spb-1">
                 <li class="breadcrumb-item active" aria-current="page">
-	  <!--        <a href="/docs/extras/example-quiz">Quiz</a>     -->
+	  <!--        <a href="/transition/praticiens/index">Fransgenre WIKI</a>     -->
                 </li>
 	      </ol>
            </nav>
            <div class="td-content">
-	      <h1 id="quizzes">Quizzes</h1>
+	      <h1 id="bienvenue-sur-le-wiki">Bienvenue sur le wiki</h1>
 
-<p>As of version 0.0.12, mkdocs-jekyll has support for basic quizzes! These are
-intended to help educate your users about the content of your documentation.
-For a quiz, you can add a new file to the folder <code class="highlighter-rouge">_data/quizzes</code>, and write a 
-questions file based on the format shown in <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>.
-Here is a simple example of a multiple choice question (which can also serve as 
-True/False):</p>
+<p>Ce wiki à pour but de centraliser les ressources.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">This is the Quiz Title</span>
-<span class="na">randomized</span><span class="pi">:</span> <span class="no">false</span>
-<span class="na">questions</span><span class="pi">:</span>
+<h2 id="comment-participer-">Comment participer ?</h2>
 
- <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">multiple-choice"</span>
-   <span class="na">question</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">False,</span><span class="nv"> </span><span class="s">Pittsburgh</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">West</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Philadelphia"</span>
-   <span class="na">items</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">True</span>
-      <span class="na">correct</span><span class="pi">:</span> <span class="no">true</span>
-    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">False</span>
-      <span class="na">correct</span><span class="pi">:</span> <span class="no">false</span>
-   <span class="na">followup</span><span class="pi">:</span> <span class="pi">|</span> 
-      <span class="s">The answer is True! Pittsburgh is 304.9 miles West of </span>
-      <span class="s">Philadelphia, or approximately a car ride of </span>
-      <span class="s">4 hours and 52 minutes. Buckle up!</span>
-</code></pre></div></div>
-
-<p>The quiz is rendered with a “Show Answer” button below each question, and when
-the user clicks it, any questions that are flagged with <code class="highlighter-rouge">correct: true</code> will be 
-bolded, and if a followup section is included, it will be displayed.
-See the live example at the end of this page.</p>
-
-<h2 id="options">Options</h2>
-
-<h4 id="title">Title</h4>
-
-<p>If you include a title, it will be rendered at the top of the quiz. This is
-optional - you can leave it out and add it before the include on the page.</p>
-
-<h4 id="random">Random</h4>
-
-<p>If you want your questions to be presented randomly, just add randomized: true
-to the data.</p>
-
-<h2 id="example-quiz">Example Quiz</h2>
-
-<p>If I want to include the quiz located at <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I 
-can do so like this:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}
-</code></pre></div></div>
-
-<p>The rendered quiz is shown here:</p>
-
+<p>Je vous invite à consulter le <a href="https://github.com/fransgenre/fransgenre.github.io/wiki">wiki</a> disponible sur Github.</p>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
