@@ -47,7 +47,8 @@ feedback: false
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
-color: "#30638e"
+#color: "#30638e"
+color: "#6a1b9a"
 # color: "#8c1515" # primary color for header, buttons
 
 # Build settings
@@ -71,17 +72,40 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path
+  generalites:
+    output: true
+    permalink: /:collection/:path
+  transition:
+    output: true
+    permalink: /:collection/:path
+  praticiens:
+    output: true
+    permalink: /transition/praticiens/:path
+collections_dir: pages
 
 # Defaults
 defaults:
-  - scope:
+  -
+    scope:
+      path: "_transition"
+      type: "transition"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_generalites"
+      type: "generalites"
+    values:
+      layout: "page"
+  -
+    scope:
       path: "_docs"
       type: "docs"
     values:
-      layout: page
+      layout: "page"
   -
     scope:
-      path: ""
+      path: "pages"
       type: "pages"
     values:
       layout: "page"

@@ -1,23 +1,42 @@
-- title: Documentation
-  url: docs
+- title: Transidentité
+  url: "generalites/explications"
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: Explications
+      url: "generalites/explications"
+    - title: Témoignages
+      url: "generalites/temoignages"
+- title: Transition
+  url: "transition"
+  links:
+    - title: La santé
+      url: "transition/sante" 
       children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: "Extras"
-      url: "docs/extras"
+        - title: Les parcours
+          url: "transition/sante/parcours"
+        - title: Psychologie
+          url: "transition/sante/psychologie"
+        - title: L'homonothérapie
+          url: "transition/sante/hormones"
+        - title: La voix
+          url: "transition/sante/voix"
+        - title: Les chirurgies
+          url: "transition/sante/chirurgie"
+        - title: Les praticiens
+          url: "transition/sante/praticiens"
+    - title: Administratif
+      url: "transition/administratif"
       children:
-        - title: Quizzes
-          url: "docs/extras/example-quiz"
-        - title: Tags Page
-          url: "tags"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
+        - title: Les études
+          url: "transition/administratif/scolarite"
+        - title: Etat civil
+          url: "transition/administratif/etat-civil"
+        - title: L'ALD
+          url: "transition/administratif/ald"
+    - title: Social
+      url: "transition/social"
+      children:
+        - title: Les parcours
+          url: "transition/social/comming-out"
+        - title: Le passing
+          url: "transition/social/passing"
+
