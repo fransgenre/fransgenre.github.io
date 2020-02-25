@@ -1,10 +1,10 @@
 - title: Transidentité
-  url: "generalites/explications"
+  url: "generalites"
   links:
     - title: Explications
-      url: "generalites/explications"
-    - title: Témoignages
-      url: "generalites/temoignages"
+      url: "generalites#explications"
+#    - title: Témoignages
+#      url: "generalites/temoignages"
 - title: Transition
   url: "transition"
   links:
@@ -21,17 +21,17 @@
           url: "transition/sante/voix"
         - title: Les chirurgies
           url: "transition/sante/chirurgie"
-        - title: Les praticiens
-          url: "transition/sante/praticiens"
+#        - title: Les praticiens
+#          url: "transition/sante/praticiens"
     - title: Administratif
       url: "transition/administratif"
       children:
         - title: Les études
-          url: "transition/administratif/scolarite"
+          url: "transition/administratif#les-études"
         - title: Etat civil
-          url: "transition/administratif/etat-civil"
+          url: "transition/administratif#létat-civil"
         - title: L'ALD
-          url: "transition/administratif/ald"
+          url: "transition/administratif#lald"
     - title: Social
       url: "transition/social"
       children:
