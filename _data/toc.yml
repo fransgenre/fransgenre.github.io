@@ -35,7 +35,7 @@
     - title: Social
       url: "transition/social"
       children:
-        - title: Les parcours
+        - title: Le comming out
           url: "transition/social/comming-out"
         - title: Le passing
           url: "transition/social/passing"
