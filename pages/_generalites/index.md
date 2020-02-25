@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Fransgenre WIKI
-permalink: /
 ---
 
 # Bienvenue sur le wiki
