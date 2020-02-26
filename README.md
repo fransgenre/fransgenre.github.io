@@ -12,7 +12,7 @@ Ce wiki à pour objectif de transmettre les informations et guides liés à la t
 4. Cliquer sur modifier cette page
 5. Fork ce repository
 6. Faire ses modifications (en markdown voir https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown)
-7. Faire un pull request vers la branche develop.
+7. Faire un pull request vers la branche release.
 
 Ressource utile pour tester vos modifications avant : https://stackedit.io/app
 
