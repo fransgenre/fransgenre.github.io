@@ -4792,6 +4792,9 @@ input[type=button].btn-block {
     }
 }
 
+#content br {display: none;}
+#content p br {display: inline;}
+
 .nav {
     display: -webkit-box;
     display: -webkit-flex;
