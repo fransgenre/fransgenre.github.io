@@ -168,59 +168,59 @@ $(document).ready(function() {
 	      </ol>
            </nav>
            <div class="td-content">
-	      <h1 id="quizzes">Quizzes</h1>
-
-<p>As of version 0.0.12, mkdocs-jekyll has support for basic quizzes! These are
-intended to help educate your users about the content of your documentation.
-For a quiz, you can add a new file to the folder <code class="highlighter-rouge">_data/quizzes</code>, and write a 
-questions file based on the format shown in <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>.
-Here is a simple example of a multiple choice question (which can also serve as 
-True/False):</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">This is the Quiz Title</span>
-<span class="na">randomized</span><span class="pi">:</span> <span class="no">false</span>
-<span class="na">questions</span><span class="pi">:</span>
-
- <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">multiple-choice"</span>
-   <span class="na">question</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">False,</span><span class="nv"> </span><span class="s">Pittsburgh</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">West</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Philadelphia"</span>
-   <span class="na">items</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">True</span>
-      <span class="na">correct</span><span class="pi">:</span> <span class="no">true</span>
-    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">False</span>
-      <span class="na">correct</span><span class="pi">:</span> <span class="no">false</span>
-   <span class="na">followup</span><span class="pi">:</span> <span class="pi">|</span> 
-      <span class="s">The answer is True! Pittsburgh is 304.9 miles West of </span>
-      <span class="s">Philadelphia, or approximately a car ride of </span>
-      <span class="s">4 hours and 52 minutes. Buckle up!</span>
-</code></pre></div></div>
-
-<p>The quiz is rendered with a “Show Answer” button below each question, and when
-the user clicks it, any questions that are flagged with <code class="highlighter-rouge">correct: true</code> will be 
-bolded, and if a followup section is included, it will be displayed.
-See the live example at the end of this page.</p>
-
-<h2 id="options">Options</h2>
-
-<h4 id="title">Title</h4>
-
-<p>If you include a title, it will be rendered at the top of the quiz. This is
-optional - you can leave it out and add it before the include on the page.</p>
-
-<h4 id="random">Random</h4>
-
-<p>If you want your questions to be presented randomly, just add randomized: true
-to the data.</p>
-
-<h2 id="example-quiz">Example Quiz</h2>
-
-<p>If I want to include the quiz located at <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I 
-can do so like this:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}
-</code></pre></div></div>
-
-<p>The rendered quiz is shown here:</p>
-
+	    <h1 id="quizzes">Quizzes</h1><br />
+<br />
+<p>As of version 0.0.12, mkdocs-jekyll has support for basic quizzes! These are<br />
+intended to help educate your users about the content of your documentation.<br />
+For a quiz, you can add a new file to the folder <code class="highlighter-rouge">_data/quizzes</code>, and write a <br />
+questions file based on the format shown in <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>.<br />
+Here is a simple example of a multiple choice question (which can also serve as <br />
+True/False):</p><br />
+<br />
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">This is the Quiz Title</span><br />
+<span class="na">randomized</span><span class="pi">:</span> <span class="no">false</span><br />
+<span class="na">questions</span><span class="pi">:</span><br />
+<br />
+ <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">multiple-choice"</span><br />
+   <span class="na">question</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">False,</span><span class="nv"> </span><span class="s">Pittsburgh</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">West</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Philadelphia"</span><br />
+   <span class="na">items</span><span class="pi">:</span><br />
+    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">True</span><br />
+      <span class="na">correct</span><span class="pi">:</span> <span class="no">true</span><br />
+    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">False</span><br />
+      <span class="na">correct</span><span class="pi">:</span> <span class="no">false</span><br />
+   <span class="na">followup</span><span class="pi">:</span> <span class="pi">|</span> <br />
+      <span class="s">The answer is True! Pittsburgh is 304.9 miles West of </span><br />
+      <span class="s">Philadelphia, or approximately a car ride of </span><br />
+      <span class="s">4 hours and 52 minutes. Buckle up!</span><br />
+</code></pre></div></div><br />
+<br />
+<p>The quiz is rendered with a “Show Answer” button below each question, and when<br />
+the user clicks it, any questions that are flagged with <code class="highlighter-rouge">correct: true</code> will be <br />
+bolded, and if a followup section is included, it will be displayed.<br />
+See the live example at the end of this page.</p><br />
+<br />
+<h2 id="options">Options</h2><br />
+<br />
+<h4 id="title">Title</h4><br />
+<br />
+<p>If you include a title, it will be rendered at the top of the quiz. This is<br />
+optional - you can leave it out and add it before the include on the page.</p><br />
+<br />
+<h4 id="random">Random</h4><br />
+<br />
+<p>If you want your questions to be presented randomly, just add randomized: true<br />
+to the data.</p><br />
+<br />
+<h2 id="example-quiz">Example Quiz</h2><br />
+<br />
+<p>If I want to include the quiz located at <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I <br />
+can do so like this:</p><br />
+<br />
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}<br />
+</code></pre></div></div><br />
+<br />
+<p>The rendered quiz is shown here:</p><br />
+<br />
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
