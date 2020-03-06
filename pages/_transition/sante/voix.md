@@ -28,6 +28,7 @@ description: Ressources liées à la voix
 [LES EXERCICES DE FÉMINISATION DE LA VOIX](https://www.youtube.com/watch?v=bNJYjfIe0Jg) : Vidéo par Femivoz Mariela Astudillo
 
 ### Ressources en Anglais
+[L's Voice Training Guide (Level 1) for MTF transgender vocal feminization](https://www.reddit.com/r/transvoice/comments/d3clhe/ls_voice_training_guide_level_1_for_mtf/) : Guide très complet niveau par niveau de féminisation de la voix
 [7 TRANSGENDER VOICE FEMINIZATION MTF COACHING TIPS](https://www.transgenderhub.com/7-transgender-voice-feminization-mtf-coaching-tips/) : Blog
 [How Transgender Women Are Training Their Voices to Sound More Feminine](https://www.smithsonianmag.com/innovation/how-transgender-women-are-training-their-voices-sound-more-feminine-180957537/) : Article
 [MtF Voice Training Regimen](https://www.reddit.com/r/asktransgender/comments/1ske7b/mtf_voice_training_regimen/) : Post reddit de TattoedTransgirl
