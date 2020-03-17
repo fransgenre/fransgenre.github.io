@@ -9,7 +9,7 @@ Ce wiki à pour but de centraliser les ressources et d'informer quant à la tran
 
 ## Pour en savoir plus sur la transidentité, 
 Vous êtes vous déja posé la question qu'est: "C'est quoi la transidentité ?" ou bien "Comment accompagner mon ami qui se dit trans ?" Et puis, c'est quoi trans d'abord ?
-develop
+
 Vous souhaitez avoir des ressources, comprendre et aider ? Alors visitez [la section d'information]({% link pages/generalites.md %})
 
 ## Je suis trans, et je suis en recherche d'information
