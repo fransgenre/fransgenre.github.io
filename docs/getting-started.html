@@ -187,7 +187,7 @@ for search at the top or side of the page. Give it a try! The content is rendere
 into window data that is used by lunr.js to generate the search results.<br />
 If you want to exclude any file from search, add this to its front end matter:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---<br />
 layout: null<br />
 excluded_in_search: true<br />
 ---<br />
@@ -199,14 +199,14 @@ but should not be included in search.</p><br />
 <h3 id="external-search">External Search</h3><br />
 <br />
 <p>If you have an external site with a search GET endpoint (meaning one that ends<br />
-in <code class="highlighter-rouge">?q=&lt;term&gt;</code>, then you can automatically link page tags to search this endpoint.<br />
+in <code class="language-plaintext highlighter-rouge">?q=&lt;term&gt;</code>, then you can automatically link page tags to search this endpoint.<br />
 For example, on an HPC site I’d want a tag like “mpi” to do a search on <br />
 <a href="http://ask.cyberinfrastructure.org">http://ask.cyberinfrastructure.org</a> for mpi.<br />
 See the <a href="#tags">tags</a> section below for how to configure this.</p><br />
 <br />
 <h3 id="documentation">Documentation</h3><br />
 <br />
-<p>Documentation pages should be written in the <code class="highlighter-rouge">docs</code> folder of the repository,<br />
+<p>Documentation pages should be written in the <code class="language-plaintext highlighter-rouge">docs</code> folder of the repository,<br />
 and you are allowed to use whatever level of nesting (subfolders) that <br />
 works for you! It’s a Jekyll <a href="https://jekyllrb.com/docs/collections/">collection</a>, which means that you<br />
 can add other content (images, scripts) and it will be included for linking to.</p><br />
@@ -215,7 +215,7 @@ can add other content (images, scripts) and it will be included for linking to.<
 <br />
 <p>The url that will render is based on the path. For example, if we had the following structure:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docs/<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docs/<br />
   getting-started.md<br />
   clusters/<br />
      sherlock/<br />
@@ -223,7 +223,7 @@ can add other content (images, scripts) and it will be included for linking to.<
 </code></pre></div></div><br />
 <br />
 <p>The first page (akin to the one you are reading) would render at it’s path,<br />
-<code class="highlighter-rouge">/docs/getting-started/</code>.</p><br />
+<code class="language-plaintext highlighter-rouge">/docs/getting-started/</code>.</p><br />
 <br />
 <h4 id="linking">Linking</h4><br />
 <br />
@@ -231,38 +231,38 @@ can add other content (images, scripts) and it will be included for linking to.<
 direct path in markdown to any subfolder to link to it, such as the second<br />
 getting started page for sherlock:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[example](clusters/sherlock/getting-started.md)<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[example](clusters/sherlock/getting-started.md)<br />
 </code></pre></div></div><br />
 <br />
-<p><a href="example-page">Here</a> is an example link to a relative path of a file (<code class="highlighter-rouge">example-page.md</code>)<br />
+<p><a href="example-page">Here</a> is an example link to a relative path of a file (<code class="language-plaintext highlighter-rouge">example-page.md</code>)<br />
 in the same directory, and from that page you can test linking to a subfoldr.<br />
 In the case of not having a subfolder, we could write the link out directly:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[example]({{ site.baseurl }}/docs/clusters/sherlock/getting-started.md)<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[example]({{ site.baseurl }}/docs/clusters/sherlock/getting-started.md)<br />
 </code></pre></div></div><br />
 <br />
 <p>or just put the relative path:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Here](example-page)<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Here](example-page)<br />
 </code></pre></div></div><br />
 <br />
 <p>or better, there is a shortand trick! We can use the provided “includes” <br />
 template to do the same based on the path to create a link:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}<br />
 </code></pre></div></div><br />
 <p>The path should be relative to the docs folder.</p><br />
 <br />
 <h3 id="pages">Pages</h3><br />
 <br />
-<p>The <code class="highlighter-rouge">pages</code> folder uses the same page layout, but is not part of the docs collection.<br />
+<p>The <code class="language-plaintext highlighter-rouge">pages</code> folder uses the same page layout, but is not part of the docs collection.<br />
 The two are provided to create a distinction between website pages (e.g., about,<br />
 feed.xml) and documentation pages.</p><br />
 <br />
 <h3 id="navigation">Navigation</h3><br />
 <br />
 <p>Whether you place your page under “pages” or “docs,” for those pages that you want added to the navigation, <br />
-you should add them to <code class="highlighter-rouge">_data/toc.yml</code>. If you’ve defined a <code class="highlighter-rouge">permalink</code> in the<br />
+you should add them to <code class="language-plaintext highlighter-rouge">_data/toc.yml</code>. If you’ve defined a <code class="language-plaintext highlighter-rouge">permalink</code> in the<br />
 front end matter, you can use that (e.g., “About” below). If you haven’t and<br />
 want to link to docs, the url is the path starting with the docs folder.<br />
 Here is an example (currently the active example):</p><br />
@@ -300,7 +300,7 @@ Here is an example (currently the active example):</p><br />
 <br />
 <p>It might be the case that your site or group has news items that would<br />
 warrent sharing with the community, and should be available as a feed.<br />
-For this reason, you can write traditional <a href="https://jekyllrb.com/docs/posts/">posts</a> in the <code class="highlighter-rouge">_posts</code><br />
+For this reason, you can write traditional <a href="https://jekyllrb.com/docs/posts/">posts</a> in the <code class="language-plaintext highlighter-rouge">_posts</code><br />
 folder that will parse into the site <a href="/feed.xml">feed</a><br />
 The bottom of the page links the user to a post archive, where posts are organized<br />
 according to the year.</p><br />
@@ -308,7 +308,7 @@ according to the year.</p><br />
 <h3 id="buttons">Buttons</h3><br />
 <br />
 <p>Buttons come in a nice array of colors. Here is the code for a basic example,<br />
-and you’d want to vary the <code class="highlighter-rouge">.btn-&lt;tag&gt;</code> to get different classes.</p><br />
+and you’d want to vary the <code class="language-plaintext highlighter-rouge">.btn-&lt;tag&gt;</code> to get different classes.</p><br />
 <br />
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>.btn-success<span class="nt">&lt;/button&gt;</span><br />
 </code></pre></div></div><br />
@@ -360,7 +360,7 @@ and primary.</p><br />
 An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for another might look like this:<br />
 </div><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include alert.html type="info" title="Here is another!" %}<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include alert.html type="info" title="Here is another!" %}<br />
 </code></pre></div></div><br />
 <br />
 <p>Just for fun, here are all the types:</p><br />
@@ -411,7 +411,7 @@ This is a secondary alert<br />
 brew <span class="nb">install </span>git<br />
 </code></pre></div></div><br />
 <br />
-<p>If you are on Debian/Ubuntu, then you can easily install git with <code class="highlighter-rouge">apt-get</code></p><br />
+<p>If you are on Debian/Ubuntu, then you can easily install git with <code class="language-plaintext highlighter-rouge">apt-get</code></p><br />
 <br />
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> git<br />
 </code></pre></div></div><br />
@@ -484,7 +484,7 @@ and then in the project settings be sure to enable building forked build request
 and to cancel redundant builds. The preview will be built on CircleCI, and saved<br />
 to static files for you to browse. The only change you will need is to edit<br />
 the static files location to be the name of your respository, which is at te<br />
-bottom of the <code class="highlighter-rouge">.circleci/config.yml</code> file:</p><br />
+bottom of the <code class="language-plaintext highlighter-rouge">.circleci/config.yml</code> file:</p><br />
 <br />
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="pi">-</span> <span class="na">store_artifacts</span><span class="pi">:</span><br />
           <span class="na">path</span><span class="pi">:</span> <span class="s">~/repo/_site</span><br />
@@ -492,15 +492,15 @@ bottom of the <code class="highlighter-rouge">.circleci/config.yml</code> file:<
 </code></pre></div></div><br />
 <br />
 <p>In the above, the destination should coincide with your repository name.<br />
-Remember that for most links, CircleCI won’t honor an <code class="highlighter-rouge">index.html</code> file in a subfolder<br />
-(e.g., <code class="highlighter-rouge">subfolder/index.html</code> will not be served as <code class="highlighter-rouge">subfolder/</code>, so for example,<br />
+Remember that for most links, CircleCI won’t honor an <code class="language-plaintext highlighter-rouge">index.html</code> file in a subfolder<br />
+(e.g., <code class="language-plaintext highlighter-rouge">subfolder/index.html</code> will not be served as <code class="language-plaintext highlighter-rouge">subfolder/</code>, so for example,<br />
 you might need to turn this:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;circleci&gt;/0/mkdocs-jekyll/docs/getting-started/<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;circleci&gt;/0/mkdocs-jekyll/docs/getting-started/<br />
 </code></pre></div></div><br />
 <p>into this:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;circleci&gt;/0/mkdocs-jekyll/docs/getting-started/index.html<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;circleci&gt;/0/mkdocs-jekyll/docs/getting-started/index.html<br />
 </code></pre></div></div><br />
 <br />
 <h2 id="customization">Customization</h2><br />
@@ -513,12 +513,12 @@ Most are documented there, and please <a href="https://www.github.com/fransgenre
 <h4 id="adding-pages">Adding pages</h4><br />
 <br />
 <p>To add pages, write them into the <a href="pages">pages</a> folder. <br />
-You define urls based on the <code class="highlighter-rouge">permalink</code> attribute in your pages,<br />
+You define urls based on the <code class="language-plaintext highlighter-rouge">permalink</code> attribute in your pages,<br />
 and then add them to the navigation by adding to the content of <a href="_data/toc.yml">_data/toc.yml</a>.</p><br />
 <br />
 <h4 id="tags">Tags</h4><br />
 <br />
-<p>If you include tags on a page, by default they will link to the <a href="https://fransgenre.github.io/tags">tags page</a> on the site. However, if you define a <code class="highlighter-rouge">tag_search_endpoint</code> url in your configuration file, by clicking<br />
+<p>If you include tags on a page, by default they will link to the <a href="https://fransgenre.github.io/tags">tags page</a> on the site. However, if you define a <code class="language-plaintext highlighter-rouge">tag_search_endpoint</code> url in your configuration file, by clicking<br />
 the tag, the user will be taken to this page to search for it. As an example,<br />
 we define the current search endpoint to be Ask Cyberinfrastructure, and<br />
 page tags link to a search on it:</p><br />

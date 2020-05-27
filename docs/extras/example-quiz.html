@@ -172,8 +172,8 @@ $(document).ready(function() {
 <br />
 <p>As of version 0.0.12, mkdocs-jekyll has support for basic quizzes! These are<br />
 intended to help educate your users about the content of your documentation.<br />
-For a quiz, you can add a new file to the folder <code class="highlighter-rouge">_data/quizzes</code>, and write a <br />
-questions file based on the format shown in <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>.<br />
+For a quiz, you can add a new file to the folder <code class="language-plaintext highlighter-rouge">_data/quizzes</code>, and write a <br />
+questions file based on the format shown in <code class="language-plaintext highlighter-rouge">_data/quizzes/example-quiz.yml</code>.<br />
 Here is a simple example of a multiple choice question (which can also serve as <br />
 True/False):</p><br />
 <br />
@@ -195,7 +195,7 @@ True/False):</p><br />
 </code></pre></div></div><br />
 <br />
 <p>The quiz is rendered with a “Show Answer” button below each question, and when<br />
-the user clicks it, any questions that are flagged with <code class="highlighter-rouge">correct: true</code> will be <br />
+the user clicks it, any questions that are flagged with <code class="language-plaintext highlighter-rouge">correct: true</code> will be <br />
 bolded, and if a followup section is included, it will be displayed.<br />
 See the live example at the end of this page.</p><br />
 <br />
@@ -213,10 +213,10 @@ to the data.</p><br />
 <br />
 <h2 id="example-quiz">Example Quiz</h2><br />
 <br />
-<p>If I want to include the quiz located at <code class="highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I <br />
+<p>If I want to include the quiz located at <code class="language-plaintext highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I <br />
 can do so like this:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}<br />
 </code></pre></div></div><br />
 <br />
 <p>The rendered quiz is shown here:</p><br />

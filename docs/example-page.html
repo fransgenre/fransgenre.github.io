@@ -171,22 +171,22 @@ $(document).ready(function() {
 	    <h1 id="a-nested-page">A Nested Page</h1><br />
 <br />
 <p>This is an example of a page that doesn’t have a permalink defined, and<br />
-is not included in the table of contents (<code class="highlighter-rouge">_data/toc.yml</code>). This means<br />
-that it will render based on it’s path. Since it’s in <code class="highlighter-rouge">docs/example-page.md</code>,<br />
-the url will be <code class="highlighter-rouge">docs/example-page/</code>.</p><br />
+is not included in the table of contents (<code class="language-plaintext highlighter-rouge">_data/toc.yml</code>). This means<br />
+that it will render based on it’s path. Since it’s in <code class="language-plaintext highlighter-rouge">docs/example-page.md</code>,<br />
+the url will be <code class="language-plaintext highlighter-rouge">docs/example-page/</code>.</p><br />
 <br />
 <h2 id="link-to-a-subfolder">Link to a subfolder</h2><br />
 <br />
 <p>Now let’s say we want to link to a subfolder, specifically with this<br />
 setup:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docs/<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docs/<br />
   example-page.md  (-- we are here<br />
   subfolder/<br />
      example-page.md  (-- we want to link here<br />
 </code></pre></div></div><br />
 <br />
-<p>You can provide the relative path to the file, like <code class="highlighter-rouge">subfolder/example-page.md</code><br />
+<p>You can provide the relative path to the file, like <code class="language-plaintext highlighter-rouge">subfolder/example-page.md</code><br />
 and Jekyll will handle parsing it. For example:</p><br />
 <br />
 <ul><br />
@@ -197,7 +197,7 @@ and Jekyll will handle parsing it. For example:</p><br />
  is the same link, <br />
 but generated with the include statement:</p><br />
 <br />
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include doc.html name="here" path="subfolder/example-page" %}<br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include doc.html name="here" path="subfolder/example-page" %}<br />
 </code></pre></div></div><br />
 <br />
 
